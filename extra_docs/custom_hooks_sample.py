@@ -1,7 +1,6 @@
 """
 This is a sample script that can be passed to grab-site --custom-hooks=.
-It drops http:// URLs before they can be queued, and it aborts responses
-that have a Content-Type: that starts with 'audio/'
+It aborts responses that have a Content-Type: that does not start with 'text/'
 """
 
 def has_content_type_text(response_info):
